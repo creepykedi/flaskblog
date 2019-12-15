@@ -17,3 +17,7 @@ def home():
 @main.route('/about')
 def about():
     return render_template('about.html', title='About')
+
+@main.route('/JS')
+def JS():
+    return render_template('JS.html', title='JS')

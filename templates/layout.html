@@ -14,6 +14,7 @@
     {% else %}
     <title>Flask Blog</title>
     {% endif %}
+    {% block head %}{% endblock %}
 </head>
 <body>
     <header class="site-header">
@@ -27,6 +28,7 @@
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Home</a>
               <a class="nav-item nav-link" href="{{  url_for('main.about') }}">About</a>
+              <a class="nav-item nav-link" href="{{  url_for('main.JS') }}">JS</a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">

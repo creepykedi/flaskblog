@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block head %}
+    <script>
+            let counter = 0;
+            function count() {
+                counter++;
+                document.querySelector('#counter').innerHTML = counter;
+            }
+
+    </script>
+
+{% endblock %}
+
+{% block content %}
+    <h1>My JS here</h1>
+    <h1 id="counter">0</h1>
+    <button onclick="count()">Click here!</button>
+
+{% endblock %}
